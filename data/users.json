@@ -1,0 +1,112 @@
+[
+    {
+        "id": "uu1",
+        "fullName": "Leonardo Patron",
+        "username": "leonidas97",
+        "profilePictureUrl": "",
+        "email": "leonidas97@hotmail.com",
+        "password": "alakazam343",
+        "role": "user",
+        "country": "Peru"
+    },
+    {
+        "id": "uu2",
+        "fullName": "Juan Carlos Ortiz",
+        "username": "juanca_sport",
+        "profilePictureUrl": "",
+        "email": "juanca_ortiz@hotmail.com",
+        "password": "pollosfelicesxd",
+        "role": "user",
+        "country": "Peru"
+    },
+    {
+        "id": "uu3",
+        "fullName": "Valeria Rizo",
+        "username": "vale-rizo3",
+        "profilePictureUrl": "",
+        "email": "valrizo@hotmail.com",
+        "password": "cocorallado123",
+        "role": "user",
+        "country": "Peru"
+    },
+    {
+        "id": "uu4",
+        "fullName": "Jonathan Senn",
+        "username": "john_salchicon98",
+        "profilePictureUrl": "",
+        "email": "jonsalchichi@hotmail.com",
+        "password": "gallinalocafea98",
+        "role": "user",
+        "country": "Peru"
+    },
+    {
+        "id": "uu5",
+        "fullName": "Maria Isabel Ponce",
+        "username": "mariabell34",
+        "profilePictureUrl": "",
+        "email": "marimari@hotmail.com",
+        "password": "foncecaaaarr",
+        "role": "user",
+        "country": "Peru"
+    },
+    {
+        "id": "uu7",
+        "fullName": "Sylbia Myer",
+        "username": "sylvia_m",
+        "profilePictureUrl": "",
+        "email": "sylbi@hotmail.com",
+        "password": "ploberencde4",
+        "role": "user",
+        "country": "United States"
+    },
+    {
+        "id": "uu98",
+        "fullName": "Silvia Jimenez",
+        "username": "silvia_jimenez",
+        "profilePictureUrl": "",
+        "email": "jimenez.silbia@gmail.com",
+        "password": "jimenezjimenasss",
+        "role": "user",
+        "country": "Peru"
+    },
+    {
+        "id": "uu12",
+        "fullName": "Pedro Ventura",
+        "username": "pedro.s32",
+        "profilePictureUrl": "",
+        "email": "pedro.ventura@gmail.com",
+        "password": "venturasrocks7",
+        "role": "user",
+        "country": "Peru"
+    },
+    {
+        "id": "uu19",
+        "fullName": "Lucero Gutierrez",
+        "username": "lucero.g",
+        "profilePictureUrl": "",
+        "email": "luceritostart@gmail.com",
+        "password": "qwerty55",
+        "role": "user",
+        "country": "Peru"
+    },
+    {
+        "id": "uu42",
+        "fullName": "Paolo Penn",
+        "username": "paolo.pen",
+        "profilePictureUrl": "",
+        "email": "pao.lopenn@gmail.com",
+        "password": "polloalabraza",
+        "role": "user",
+        "country": "Peru"
+    },
+    {
+        "id": "uu49",
+        "fullName": "Alejandro La Rosa",
+        "username": "alejandrope.js",
+        "profilePictureUrl": "",
+        "email": "alelarosa99@gmail.com",
+        "password": "Alejandro170999",
+        "role": "admin",
+        "country": "Peru"
+    }
+]

@@ -1,0 +1,337 @@
+[
+    {
+        "id": 1,
+        "hotelName": "Hotel JW Marriott Lima",
+        "hotelImages": [],
+        "hotelWebsite": "https://www.espanol.marriott.com/hotels/travel/limdt-jw-marriott-hotel-lima/",
+        "hotelSlug": "hotel-jw-marriott-lima",
+        "hotelPrice": "S/. 614",
+        "hotelLocation": "Malecon De La Reserva 615 Miraflores, Lima 15074 Perú",
+        "hotelReviews": [
+            {
+                "id": "1a",
+                "reviewTitle": "Amigas por siempre.!!!!",
+                "reviewBody": "Las pasamos genial la atencion de Ivan de la Meza, fue fantastica siempre nos recomendo lo mejor la comida exquisita. Nos encanto las Ostras super frescas y la comida en general los makis Batayaki despues de dos años felices de la reapertura .",
+                "reviewLikes": 78,
+                "reviewedAt": "febrero de 2022",
+                "reviewOwner": {
+                    "id": "uu1",
+                    "username": "leonidas97",
+                    "profilePictureUrl": ""
+                },
+                "reviewRating": 5
+            },
+            {
+                "id": "2a",
+                "reviewTitle": "Test",
+                "reviewBody": "Just testing around",
+                "reviewLikes": 7,
+                "reviewOwner": {
+                    "id": "uu2",
+                    "username": "juanca_sport",
+                    "profilePictureUrl": ""
+                },
+                "reviewRating": 4.5,
+                "reviewedAt": "agosto de 2021"
+            },
+            {
+                "id": "3a",
+                "reviewTitle": "Me gustó mucho!",
+                "reviewBody": "muy buena experiencia!!",
+                "reviewLikes": 78,
+                "reviewOwner": {
+                    "id": "uu3",
+                    "username": "vale-rizo3",
+                    "profilePictureUrl": ""
+                },
+                "reviewedAt": "agosto de 2021",
+                "reviewRating": 4
+            }
+        ],
+        "hotelLikes": 4182,
+        "hotelAverageRating": 4.5
+    },
+    {
+        "id": 2,
+        "hotelName": "Sheraton Lima Hotel & Convention Center",
+        "hotelImages": [],
+        "hotelWebsite": "https://www.marriott.com/en-us/hotels/limsi-sheraton-lima-hotel-and-convention-center/overview/?scid=bb1a189a-fec3-4d19-a255-54ba596febe2&y_source=1_Mjg3MDExMi03MTUtbG9jYXRpb24ud2Vic2l0ZQ%3D%3D",
+        "hotelSlug": "sheraton-lima-hotel-&-convention-center",
+        "hotelPrice": "S/. 764",
+        "hotelLocation": "Paseo de la Republica 170, Lima 1 Peru",
+        "hotelReviews": [
+            {
+                "id": "1b",
+                "reviewTitle": "Amigas por siempre.!!!!",
+                "reviewBody": "Las pasamos genial la atencion de Ivan de la Meza, fue fantastica siempre nos recomendo lo mejor la comida exquisita. Nos encanto las Ostras super frescas y la comida en general los makis Batayaki despues de dos años felices de la reapertura .",
+                "reviewLikes": 78,
+                "reviewedAt": "febrero de 2022",
+                "reviewOwner": {
+                    "id": "uu1",
+                    "username": "leonidas97",
+                    "profilePictureUrl": ""
+                },
+                "reviewRating": 5
+            },
+            {
+                "id": "2b",
+                "reviewTitle": "Test",
+                "reviewBody": "Just testing around",
+                "reviewLikes": 7,
+                "reviewOwner": {
+                    "id": "uu1",
+                    "username": "leonidas97",
+                    "profilePictureUrl": ""
+                },
+                "reviewedAt": "agosto de 2022",
+                "reviewRating": 5
+            },
+            {
+                "id": "3b",
+                "reviewTitle": "Me gustó mucho!",
+                "reviewBody": "muy buena experiencia!!",
+                "reviewLikes": 78,
+                "reviewOwner": {
+                    "id": "uu1",
+                    "username": "leonidas97",
+                    "profilePictureUrl": ""
+                },
+                "reviewedAt": "agosto de 2021",
+                "reviewRating": 5
+            }
+        ],
+        "hotelLikes": 4182,
+        "hotelAverageRating": 5
+    },
+    {
+        "id": 3,
+        "hotelName": "Delfines Hotel & Convention Center",
+        "hotelImages": [],
+        "hotelWebsite": "https://www.losdelfineshotel.com/",
+        "hotelSlug": "delfines-hotel-&-convention-center",
+        "hotelPrice": "S/. 458",
+        "hotelLocation": "Calle Los Eucaliptos 555, San Isidro 15076",
+        "hotelReviews": [
+            {
+                "id": "1c",
+                "reviewTitle": "Recepción de boda",
+                "reviewBody": "Super buena nuestra experiencia en los Delfines!!! Realizamos la recepción de nuestra boda y todos los invitados se encontraron muy felices!!! Desde el momento en que empezamos a organizarla, la encargada de la organización siempre se mostro amable, solicita, nos ayudaba y sugería opciones precisas. Lo máximo !!! si no se podía algo nos daba alternativas y respondía siempre al toque. La comida deliciosa, el servicio impecable .",
+                "reviewLikes": 7,
+                "reviewedAt": "enero de 2021",
+                "reviewOwner": {
+                    "id": "uu4",
+                    "username": "john_salchicon98",
+                    "profilePictureUrl": ""
+                },
+                "reviewRating": 5
+            },
+            {
+                "id": "2c",
+                "reviewTitle": "Excelente estadio, escape romantico",
+                "reviewBody": "Excelente atención en todo momento en cada detalle, la cena exquisita y en el lunch del piso 12 excelente atención por parte Srta. Laura, y la vista de la suit muy hermosa. Gracias por recibirnos en nuestro tercer aniversario de matrimonio, Bodas de Cuero.",
+                "reviewLikes": 2,
+                "reviewOwner": {
+                    "id": "uu1",
+                    "username": "leonidas97",
+                    "profilePictureUrl": ""
+                },
+                "reviewedAt": "enero de 2021",
+                "reviewRating": 5
+            },
+            {
+                "id": "3c",
+                "reviewTitle": "Excelente recepción boda civil y estadía",
+                "reviewBody": "Excelente servicio del hotel, especialmente en la atención a los invitados de mi boda civil, ya que realizamos un almuerzo familiar en el restaurante Delphos Bistró como parte de la recepción. La comida deliciosa, los mozos muy atentos y predispuestos a los pedidos, asimismo el lugar cumplía con las medidas sanitarias (protocolos de desinfección y uso de mascarillas). Luego del almuerzo, mi esposo y yo permanecimos el fin de semana en el hotel, nos ofrecieron un upgrade a Junior Suite, lo cual fue un excelente detalle para recién casados, así que pasamos unos días inolvidables, con bonita vista y comidas ricas del restaurante. Estuvieron pendientes de nuestra estadía, la limpieza puntual y la atención en general de lo mejor. Un agradecimiento especial a Nicole Levy, quien estuvo al pendiente de todos los detalles y requerimientos desde el día que la contacté para la recepción del civil hasta el último minuto de nuestra estadía.",
+                "reviewLikes": 100,
+                "reviewOwner": {
+                    "id": "uu5",
+                    "username": "mariabell34",
+                    "profilePictureUrl": ""
+                },
+                "reviewedAt": "junio de 2021",
+                "reviewRating": 5
+            },
+            {
+                "id": "3d",
+                "reviewTitle": "Excelente recepción boda civil y estadía",
+                "reviewBody": "Excelente servicio del hotel, especialmente en la atención a los invitados de mi boda civil, ya que realizamos un almuerzo familiar en el restaurante Delphos Bistró como parte de la recepción. La comida deliciosa, los mozos muy atentos y predispuestos a los pedidos, asimismo el lugar cumplía con las medidas sanitarias (protocolos de desinfección y uso de mascarillas). Luego del almuerzo, mi esposo y yo permanecimos el fin de semana en el hotel, nos ofrecieron un upgrade a Junior Suite, lo cual fue un excelente detalle para recién casados, así que pasamos unos días inolvidables, con bonita vista y comidas ricas del restaurante. Estuvieron pendientes de nuestra estadía, la limpieza puntual y la atención en general de lo mejor. Un agradecimiento especial a Nicole Levy, quien estuvo al pendiente de todos los detalles y requerimientos desde el día que la contacté para la recepción del civil hasta el último minuto de nuestra estadía.",
+                "reviewLikes": 100,
+                "reviewOwner": {
+                    "id": "uu5",
+                    "username": "mariabell34",
+                    "profilePictureUrl": ""
+                },
+                "reviewedAt": "junio de 2021",
+                "reviewRating": 5
+            }
+        ],
+        "hotelLikes": 4182,
+        "hotelAverageRating": 5
+    },
+    {
+        "id": 4,
+        "hotelName": "Ibis Lima Larco Miraflores",
+        "hotelImages": [],
+        "hotelWebsite": "https://all.accor.com/hotel/6971/index.es.shtml?utm_campaign=seo+maps&utm_medium=seo+maps&utm_source=google+Maps",
+        "hotelSlug": "ibis-lima-larco-miraflores",
+        "hotelPrice": "S/. 222",
+        "hotelLocation": "Avenida Larco 1140 Miraflores, Lima 15074 Perú",
+        "hotelReviews": [
+            {
+                "id": "1d",
+                "reviewTitle": "No lo pienses muy bueno",
+                "reviewBody": "El mejor hotel si no quieres pagar por los precios del mariott muy limpio , recepción 24 hrs muy servicial y amable gracias a lion por su buen servicio y atención. The best service and clean if you dont want to pay the mariott this is the best after that one",
+                "reviewLikes": 99,
+                "reviewedAt": "febrero de 2021",
+                "reviewOwner": {
+                    "id": "uu7",
+                    "username": "sylvia_m",
+                    "profilePictureUrl": ""
+                },
+                "reviewRating": 5
+            }
+        ],
+        "hotelLikes": 1200,
+        "hotelAverageRating": 5
+    },
+    {
+        "id": 5,
+        "hotelName": "Costa Del Sol Wyndham Lima City",
+        "hotelImages": [],
+        "hotelWebsite": "",
+        "hotelSlug": "costa-del-sol-wyndham-lima-city",
+        "hotelPrice": "S/. 272",
+        "hotelLocation": "Av. Salaverry 3060 Magdalena del Mar, Lima LIMA 17 Perú",
+        "hotelReviews": [
+            {
+                "id": "1e",
+                "reviewTitle": "Vacaciones",
+                "reviewBody": "Mis mejores saludos y felicitaciones al gran equipo de trabajadores del Hotel Costa del Sol en avenida Salaverry. Excelente atención de TODO el personal y en especial las atenciones del señor Carlos Rios y don José Cienfuegos. Muchas gracias, será hasta una próxima ocasión",
+                "reviewLikes": 0,
+                "reviewedAt": "febrero de 2022",
+                "reviewOwner": {
+                    "id": "uu98",
+                    "username": "silvia_jimenez",
+                    "profilePictureUrl": ""
+                },
+                "reviewRating": 5
+            },
+            {
+                "id": "2e",
+                "reviewTitle": "Personal muy cordial",
+                "reviewBody": "Muy contentos gracias a la gran amabilidad del personal que nos ha atendido. Una bonita experiencia. Desde la misma puerta hasta llagar a nuestra habitación nos han atendido muy bien. Las instalaciones están bien conservadas y limpias. El desayuno correcto.",
+                "reviewLikes": 0,
+                "reviewedAt": "enero de 2022",
+                "reviewOwner": {
+                    "id": "uu12",
+                    "username": "pedro.s32",
+                    "profilePictureUrl": ""
+                },
+                "reviewRating": 5
+            }
+        ],
+        "hotelLikes": 1200,
+        "hotelAverageRating": 5
+    },
+    {
+        "id": 6,
+        "hotelName": "Dazzler by Wyndham Lima San Isidro",
+        "hotelImages": [],
+        "hotelWebsite": "https://dazzlersanisidro.com/?utm_source=google&utm_medium=local&utm_campaign=gmb",
+        "hotelSlug": "dazzler-by-wyndham-lima-san-isidro",
+        "hotelPrice": "S/. 271",
+        "hotelLocation": "Avenida Javier Prado Oeste 2473-2479, Lima 15076 Perú",
+        "hotelReviews": [
+            {
+                "id": "1f",
+                "reviewTitle": "Terraza espectacular!!!",
+                "reviewBody": "Excelente servicio!!! Nos atendió Pierre y fue Top de top!! Muy bueno todo, sin lugar a duda es la mejor opción para todo!! La experiencia en la terraza fue genial, no existe mejor lugar para ir, servicio, comida, bebidas, ambiente!!! Todooo",
+                "reviewLikes": 0,
+                "reviewedAt": "octubre de 2021",
+                "reviewOwner": {
+                    "id": "uu12",
+                    "username": "pedro.s32",
+                    "profilePictureUrl": ""
+                },
+                "reviewRating": 5
+            },
+            {
+                "id": "2f",
+                "reviewTitle": "Inolvidable experiencia.",
+                "reviewBody": "Muy buena atención, la piscina es temperada y el hecho que sea por turnos te da seguridad por el tema del covid 19, buen desayuno. lo unico malo es que no estuvo el jacuzzi abierto. la cama es supergrande y cómoda.",
+                "reviewLikes": 4,
+                "reviewedAt": "mayo de 2021",
+                "reviewOwner": {
+                    "id": "uu19",
+                    "username": "lucero.g",
+                    "profilePictureUrl": ""
+                },
+                "reviewRating": 5
+            }
+        ],
+        "hotelLikes": 2000,
+        "hotelAverageRating": 5
+    },
+    {
+        "id": 7,
+        "hotelName": "Courtyard Lima Miraflores",
+        "hotelImages": [],
+        "hotelWebsite": "https://www.espanol.marriott.com/reservation/rateListMenu.mi?dclid=CjkKEQiAjc2QBhC5h4KjofrtvfoBEiQAWeGPQReI95LnYyiZ4Lh6iO-6N_sBNO37Tcit5bSqrSigXLzw_wcB&defaultTab=standard",
+        "hotelSlug": "courtyard-lima-miraflores",
+        "hotelPrice": "S/. 485",
+        "hotelLocation": "Calle Schell No 400 Miraflores, Lima Perú",
+        "hotelReviews": [
+            {
+                "id": "1g",
+                "reviewTitle": "Servicio Engineer",
+                "reviewBody": "Servicio excelente, muy bueno hotel. El personal de recepción muy amable y organizado. Seguro voy a volver en este hotel. El desayuno bueno como el café. Las habitaciones son muy bien limpia y cuidadas",
+                "reviewLikes": 0,
+                "reviewedAt": "febrero de 2022",
+                "reviewOwner": {
+                    "id": "uu42",
+                    "username": "paolo.pen",
+                    "profilePictureUrl": ""
+                },
+                "reviewRating": 5
+            }
+        ],
+        "hotelLikes": 2000,
+        "hotelAverageRating": 0
+    },
+    {
+        "id": 8,
+        "hotelName": "Swissôtel Lima",
+        "hotelImages": [],
+        "hotelWebsite": "",
+        "hotelSlug": "swissotel-lima",
+        "hotelPrice": "S/. 538",
+        "hotelLocation": "Av. Santo Toribio 173 Via Central 150, Centro Empresarial Real, Lima 15073 Perú",
+        "hotelReviews": [],
+        "hotelLikes": 0,
+        "hotelAverageRating": 0
+    },
+    {
+        "id": 9,
+        "hotelName": "Iberostar Selection Miraflores",
+        "hotelImages": [],
+        "hotelWebsite": "",
+        "hotelSlug": "iberostar-selection-miraflores",
+        "hotelPrice": "S/. 463",
+        "hotelLocation": "Avenida Malecón 28 de Julio ,385 600 Meters From Parque Kennedy, Lima 15074 Perú",
+        "hotelReviews": [],
+        "hotelLikes": 0,
+        "hotelAverageRating": 0
+    },
+    {
+        "id": 10,
+        "hotelName": "Arawi Miraflores Prime",
+        "hotelImages": [],
+        "hotelWebsite": "",
+        "hotelSlug": "arawi-miraflores-prime",
+        "hotelPrice": "S/. 303",
+        "hotelLocation": "Calle Colón 223, Lima Lima 18 Perú",
+        "hotelReviews": [],
+        "hotelLikes": 0,
+        "hotelAverageRating": 0
+    }
+]
