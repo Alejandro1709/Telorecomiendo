@@ -1,5 +1,12 @@
 [
     {
+        "hotelName": "Test Hotel",
+        "hotelWebsite": "www.google.com",
+        "hotelPrice": 299,
+        "hotelLocation": "Lima Peru",
+        "hotelSlug": "test-hotel"
+    },
+    {
         "id": 1,
         "hotelName": "Hotel JW Marriott Lima",
         "hotelImages": [],
