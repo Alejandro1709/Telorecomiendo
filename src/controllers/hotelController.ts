@@ -1,41 +1,45 @@
 import { Request, Response, NextFunction } from 'express';
 import HotelModel from '../models/Hotel';
+import AppError from '../utils/AppError';
 
-const getHotels = async (req: Request, res: Response) => {
+const getHotels = async (req: Request, res: Response, next: NextFunction) => {
   try {
     const hotels = await HotelModel.find();
 
     if (!hotels.length) {
-      return res
-        .status(404)
-        .json({ status: 'Failure', message: 'No Hotels Were Found!' });
+      throw new AppError(404, 'There are no hotels in here...');
     }
 
     res
       .status(200)
       .json({ status: 'Success', results: hotels.length, data: hotels });
   } catch (error) {
-    res.status(500).json({ status: 'Failure', message: error });
+    next(error);
   }
 };
 
-const getSingleHotel = async (req: Request, res: Response) => {
+const getSingleHotel = async (
+  req: Request,
+  res: Response,
+  next: NextFunction
+) => {
   try {
     const hotel = await HotelModel.findOne({ hotelSlug: req.params.slug });
 
     if (!hotel) {
-      return res
-        .status(404)
-        .json({ status: 'Failure', message: 'Hotel Not Found!' });
+      throw new AppError(
+        404,
+        'This hotel does not exists... in this app at least.'
+      );
     }
 
     res.status(200).json({ status: 'Success', data: hotel });
   } catch (error) {
-    res.status(500).json({ status: 'Failure', message: error });
+    next(error);
   }
 };
 
-const createHotel = async (req: Request, res: Response) => {
+const createHotel = async (req: Request, res: Response, next: NextFunction) => {
   const { hotelName, hotelWebsite, hotelPrice, hotelLocation } = req.body;
 
   const hotel = new HotelModel({
@@ -54,11 +58,11 @@ const createHotel = async (req: Request, res: Response) => {
       data: savedHotel,
     });
   } catch (error) {
-    res.status(500).json({ status: 'Failure', message: error });
+    next(error);
   }
 };
 
-const updateHotel = async (req: Request, res: Response) => {
+const updateHotel = async (req: Request, res: Response, next: NextFunction) => {
   const { hotelName, hotelWebsite, hotelPrice, hotelLocation } = req.body;
 
   try {
@@ -69,9 +73,10 @@ const updateHotel = async (req: Request, res: Response) => {
     );
 
     if (!hotel) {
-      return res
-        .status(404)
-        .json({ status: 'Failure', message: 'Hotel Not Found!' });
+      throw new AppError(
+        404,
+        'This hotel does not exists... in this app at least.'
+      );
     }
 
     res.status(200).json({
@@ -80,20 +85,21 @@ const updateHotel = async (req: Request, res: Response) => {
       data: hotel,
     });
   } catch (error) {
-    res.status(500).json({ status: 'Failure', message: error });
+    next(error);
   }
 };
 
-const deleteHotel = async (req: Request, res: Response) => {
+const deleteHotel = async (req: Request, res: Response, next: NextFunction) => {
   try {
     const hotel = await HotelModel.findOneAndDelete({
       hotelSlug: req.params.slug,
     });
 
     if (!hotel) {
-      return res
-        .status(404)
-        .json({ status: 'Failure', message: 'Hotel Not Found!' });
+      throw new AppError(
+        404,
+        'This hotel does not exists... in this app at least.'
+      );
     }
 
     res.status(200).json({
@@ -102,7 +108,7 @@ const deleteHotel = async (req: Request, res: Response) => {
       data: hotel,
     });
   } catch (error) {
-    res.status(500).json({ status: 'Failure', message: error });
+    next(error);
   }
 };
 

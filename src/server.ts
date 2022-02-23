@@ -1,6 +1,13 @@
-import express, { Application, Request, Response, NextFunction } from 'express';
+import express, {
+  Application,
+  Request,
+  Response,
+  NextFunction,
+  ErrorRequestHandler,
+} from 'express';
 import connectDB from './config/connectDB';
 import hotelRoutes from './routes/hotel.routes';
+import AppError from './utils/AppError';
 
 const app: Application = express();
 
@@ -13,5 +20,19 @@ app.use('/api/v1/hotels', hotelRoutes);
 app.get('/', (req: Request, res: Response) => {
   res.send('Hello');
 });
+
+app.all('*', (req: Request, res: Response, next: NextFunction) => {
+  next(new AppError(404, 'This Page Does Not Exists!!'));
+});
+
+const errorHandler: ErrorRequestHandler = (err, req, res, next) => {
+  let { status = 500 } = err;
+
+  if (!err.message) err.message = 'Oh no... There was an unexpected error.';
+
+  res.status(status).json({ status: 'Faillure', message: err.message });
+};
+
+app.use(errorHandler);
 
 app.listen(2000, () => console.log('Server is live at: http://localhost:2000'));
