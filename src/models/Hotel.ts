@@ -1,4 +1,5 @@
 import { Schema, Types, model } from 'mongoose';
+import slugify from 'slugify';
 
 interface Hotel {
   hotelName: string;
@@ -27,9 +28,6 @@ const hotelSchema = new Schema<Hotel>({
   hotelPrice: {
     type: Number,
     required: true,
-    default: 1,
-    min: 1,
-    max: 5,
   },
   hotelLocation: {
     type: String,
@@ -42,6 +40,9 @@ const hotelSchema = new Schema<Hotel>({
       ref: 'Review',
     },
   ],
+}).pre<Hotel>('save', function (next) {
+  this.hotelSlug = slugify(this.hotelName).toLowerCase();
+  next();
 });
 
 const HotelModel = model<Hotel>('Hotel', hotelSchema);
