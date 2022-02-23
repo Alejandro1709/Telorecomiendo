@@ -43,7 +43,15 @@ const createHotel = (req: Request, res: Response) => {
   res.send('Ok');
 };
 
-const updateHotel = (req: Request, res: Response) => {};
+const updateHotel = (req: Request, res: Response) => {
+  const hotel = hotels.find((h) => h.hotelSlug === req.params.slug);
+
+  if (!hotel) {
+    return res.status(404).json({ message: 'Hotel Not Found!' });
+  }
+
+  res.send('Ok');
+};
 
 const deleteHotel = (req: Request, res: Response) => {};
 
