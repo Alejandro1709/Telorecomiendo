@@ -1,58 +1,109 @@
 import { Request, Response, NextFunction } from 'express';
-import fs from 'fs';
-import path from 'path';
-import slugify from 'slugify';
+import HotelModel from '../models/Hotel';
 
-const hotels: any[] = JSON.parse(
-  fs.readFileSync(path.join(__dirname, '../../data/hotels.json'), 'utf8')
-);
+const getHotels = async (req: Request, res: Response) => {
+  try {
+    const hotels = await HotelModel.find();
 
-const getHotels = (req: Request, res: Response) => {
-  res.send(hotels);
-};
+    if (!hotels.length) {
+      return res
+        .status(404)
+        .json({ status: 'Failure', message: 'No Hotels Were Found!' });
+    }
 
-const getSingleHotel = (req: Request, res: Response) => {
-  let hotel = hotels.find((h) => h.hotelSlug === req.params.slug);
-
-  if (!hotel) {
-    return res.status(404).json({ message: 'Hotel Not Found!' });
+    res
+      .status(200)
+      .json({ status: 'Success', results: hotels.length, data: hotels });
+  } catch (error) {
+    res.status(500).json({ status: 'Failure', message: error });
   }
-
-  res.send(hotel);
 };
 
-const createHotel = (req: Request, res: Response) => {
+const getSingleHotel = async (req: Request, res: Response) => {
+  try {
+    const hotel = await HotelModel.findOne({ hotelSlug: req.params.slug });
+
+    if (!hotel) {
+      return res
+        .status(404)
+        .json({ status: 'Failure', message: 'Hotel Not Found!' });
+    }
+
+    res.status(200).json({ status: 'Success', data: hotel });
+  } catch (error) {
+    res.status(500).json({ status: 'Failure', message: error });
+  }
+};
+
+const createHotel = async (req: Request, res: Response) => {
   const { hotelName, hotelWebsite, hotelPrice, hotelLocation } = req.body;
 
-  const newHotel = {
+  const hotel = new HotelModel({
     hotelName,
     hotelWebsite,
     hotelPrice,
     hotelLocation,
-    hotelSlug: slugify(hotelName).toLowerCase(),
-  };
+  });
 
-  const list = [...hotels];
-  list.unshift(newHotel);
+  try {
+    const savedHotel = await hotel.save();
 
-  fs.writeFileSync(
-    path.join(__dirname, '../../data/hotels.json'),
-    JSON.stringify(list)
-  );
-
-  res.send('Ok');
-};
-
-const updateHotel = (req: Request, res: Response) => {
-  const hotel = hotels.find((h) => h.hotelSlug === req.params.slug);
-
-  if (!hotel) {
-    return res.status(404).json({ message: 'Hotel Not Found!' });
+    res.status(201).json({
+      status: 'Success',
+      message: 'Hotel Created Successfully',
+      data: savedHotel,
+    });
+  } catch (error) {
+    res.status(500).json({ status: 'Failure', message: error });
   }
-
-  res.send('Ok');
 };
 
-const deleteHotel = (req: Request, res: Response) => {};
+const updateHotel = async (req: Request, res: Response) => {
+  const { hotelName, hotelWebsite, hotelPrice, hotelLocation } = req.body;
+
+  try {
+    const hotel = await HotelModel.findOneAndUpdate(
+      { hotelSlug: req.params.slug },
+      { hotelName, hotelWebsite, hotelPrice, hotelLocation },
+      { new: true, runValidators: true }
+    );
+
+    if (!hotel) {
+      return res
+        .status(404)
+        .json({ status: 'Failure', message: 'Hotel Not Found!' });
+    }
+
+    res.status(200).json({
+      status: 'Success',
+      message: 'Hotel Updated Successfully',
+      data: hotel,
+    });
+  } catch (error) {
+    res.status(500).json({ status: 'Failure', message: error });
+  }
+};
+
+const deleteHotel = async (req: Request, res: Response) => {
+  try {
+    const hotel = await HotelModel.findOneAndDelete({
+      hotelSlug: req.params.slug,
+    });
+
+    if (!hotel) {
+      return res
+        .status(404)
+        .json({ status: 'Failure', message: 'Hotel Not Found!' });
+    }
+
+    res.status(200).json({
+      status: 'Success',
+      message: 'Hotel Deleted Successfully!',
+      data: hotel,
+    });
+  } catch (error) {
+    res.status(500).json({ status: 'Failure', message: error });
+  }
+};
 
 export { getHotels, getSingleHotel, createHotel, updateHotel, deleteHotel };
