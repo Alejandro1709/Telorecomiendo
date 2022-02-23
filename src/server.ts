@@ -1,7 +1,10 @@
 import express, { Application, Request, Response, NextFunction } from 'express';
+import connectDB from './config/connectDB';
 import hotelRoutes from './routes/hotel.routes';
 
 const app: Application = express();
+
+connectDB();
 
 app.use(express.json());
 
