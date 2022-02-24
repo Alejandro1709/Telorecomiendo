@@ -9,8 +9,11 @@ import connectDB from './config/connectDB';
 import hotelRoutes from './routes/hotel.routes';
 import userRoutes from './routes/user.routes';
 import AppError from './utils/AppError';
+import dotenv from 'dotenv';
 
 const app: Application = express();
+
+dotenv.config();
 
 connectDB();
 
@@ -37,4 +40,8 @@ const errorHandler: ErrorRequestHandler = (err, req, res, next) => {
 
 app.use(errorHandler);
 
-app.listen(2000, () => console.log('Server is live at: http://localhost:2000'));
+const port = process.env.PORT || 2000;
+
+app.listen(port, () =>
+  console.log(`Server is live at: http://localhost:${port}`)
+);
