@@ -1,13 +1,5 @@
 [
     {
-        "hotelName": "Test Hotel",
-        "hotelWebsite": "www.google.com",
-        "hotelPrice": 299,
-        "hotelLocation": "Lima Peru",
-        "hotelSlug": "test-hotel"
-    },
-    {
-        "id": 1,
         "hotelName": "Hotel JW Marriott Lima",
         "hotelImages": [],
         "hotelWebsite": "https://www.espanol.marriott.com/hotels/travel/limdt-jw-marriott-hotel-lima/",
@@ -59,7 +51,6 @@
         "hotelAverageRating": 4.5
     },
     {
-        "id": 2,
         "hotelName": "Sheraton Lima Hotel & Convention Center",
         "hotelImages": [],
         "hotelWebsite": "https://www.marriott.com/en-us/hotels/limsi-sheraton-lima-hotel-and-convention-center/overview/?scid=bb1a189a-fec3-4d19-a255-54ba596febe2&y_source=1_Mjg3MDExMi03MTUtbG9jYXRpb24ud2Vic2l0ZQ%3D%3D",
@@ -111,7 +102,6 @@
         "hotelAverageRating": 5
     },
     {
-        "id": 3,
         "hotelName": "Delfines Hotel & Convention Center",
         "hotelImages": [],
         "hotelWebsite": "https://www.losdelfineshotel.com/",
@@ -176,7 +166,6 @@
         "hotelAverageRating": 5
     },
     {
-        "id": 4,
         "hotelName": "Ibis Lima Larco Miraflores",
         "hotelImages": [],
         "hotelWebsite": "https://all.accor.com/hotel/6971/index.es.shtml?utm_campaign=seo+maps&utm_medium=seo+maps&utm_source=google+Maps",
@@ -202,7 +191,6 @@
         "hotelAverageRating": 5
     },
     {
-        "id": 5,
         "hotelName": "Costa Del Sol Wyndham Lima City",
         "hotelImages": [],
         "hotelWebsite": "",
@@ -241,7 +229,6 @@
         "hotelAverageRating": 5
     },
     {
-        "id": 6,
         "hotelName": "Dazzler by Wyndham Lima San Isidro",
         "hotelImages": [],
         "hotelWebsite": "https://dazzlersanisidro.com/?utm_source=google&utm_medium=local&utm_campaign=gmb",
@@ -280,7 +267,6 @@
         "hotelAverageRating": 5
     },
     {
-        "id": 7,
         "hotelName": "Courtyard Lima Miraflores",
         "hotelImages": [],
         "hotelWebsite": "https://www.espanol.marriott.com/reservation/rateListMenu.mi?dclid=CjkKEQiAjc2QBhC5h4KjofrtvfoBEiQAWeGPQReI95LnYyiZ4Lh6iO-6N_sBNO37Tcit5bSqrSigXLzw_wcB&defaultTab=standard",
@@ -306,7 +292,6 @@
         "hotelAverageRating": 0
     },
     {
-        "id": 8,
         "hotelName": "Swissôtel Lima",
         "hotelImages": [],
         "hotelWebsite": "",
@@ -318,7 +303,6 @@
         "hotelAverageRating": 0
     },
     {
-        "id": 9,
         "hotelName": "Iberostar Selection Miraflores",
         "hotelImages": [],
         "hotelWebsite": "",
@@ -330,7 +314,6 @@
         "hotelAverageRating": 0
     },
     {
-        "id": 10,
         "hotelName": "Arawi Miraflores Prime",
         "hotelImages": [],
         "hotelWebsite": "",
