@@ -1,7 +1,8 @@
+import mongoose from 'mongoose';
 import { Schema, Types, model } from 'mongoose';
 import slugify from 'slugify';
 
-interface Hotel {
+interface Hotel extends mongoose.Document {
   hotelName: string;
   hotelImages?: string[];
   hotelWebstie?: string;
@@ -41,6 +42,9 @@ const hotelSchema = new Schema<Hotel>({
     },
   ],
 }).pre<Hotel>('save', function (next) {
+  if (!this.isModified('hotelName')) {
+    next();
+  }
   this.hotelSlug = slugify(this.hotelName).toLowerCase();
   next();
 });

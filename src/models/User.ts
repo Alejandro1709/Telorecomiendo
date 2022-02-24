@@ -1,13 +1,15 @@
 import { Schema, model } from 'mongoose';
+import bcrypt from 'bcryptjs';
+import mongoose from 'mongoose';
 
-interface User {
+interface User extends mongoose.Document {
   firstName: string;
   lastName: string;
   username: string;
   profilePictureUrl?: string;
   email: string;
   password: string;
-  role: string;
+  role?: string;
   country: string;
 }
 
@@ -36,7 +38,6 @@ const userSchema = new Schema<User>({
     type: String,
     required: true,
     trim: true,
-    maxlength: 16,
     unique: true,
   },
   password: {
@@ -56,7 +57,18 @@ const userSchema = new Schema<User>({
     required: true,
     trim: true,
   },
+}).pre<User>('save', async function (next) {
+  const user = this;
+  if (!user.isModified('password')) {
+    next();
+  }
+  const salt = await bcrypt.genSalt(12);
+  this.password = await bcrypt.hash(this.password, salt);
 });
+
+userSchema.methods.matchPasswords = async function (enteredPassword: string) {
+  return await bcrypt.compare(enteredPassword, this.password);
+};
 
 const UserModel = model<User>('User', userSchema);
 

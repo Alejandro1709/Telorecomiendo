@@ -7,6 +7,7 @@ import express, {
 } from 'express';
 import connectDB from './config/connectDB';
 import hotelRoutes from './routes/hotel.routes';
+import userRoutes from './routes/user.routes';
 import AppError from './utils/AppError';
 
 const app: Application = express();
@@ -15,6 +16,7 @@ connectDB();
 
 app.use(express.json());
 
+app.use('/api/v1/auth', userRoutes);
 app.use('/api/v1/hotels', hotelRoutes);
 
 app.get('/', (req: Request, res: Response) => {
