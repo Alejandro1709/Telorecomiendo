@@ -1,16 +1,21 @@
 import React, { useState, useEffect } from 'react';
 import HotelCard from './HotelCard';
-import HotelType from '../types/hotel.type';
 import axios from 'axios';
 
-function Sidebar() {
-  const [hotels, setHotels] = useState([]);
+function Sidebar(): JSX.Element {
+  const [hotels, setHotels] = useState([
+    {
+      _id: '',
+      hotelTitle: '',
+      hotelWebsite: '',
+      hotelPrice: 0,
+      hotelLocation: '',
+    },
+  ]);
 
   useEffect(() => {
     const fetchHotels = async () => {
-      const { data } = await axios.get<Array<HotelType>>(
-        'http://localhost:2000/api/v1/hotels'
-      );
+      const { data } = await axios.get('http://localhost:2000/api/v1/hotels');
 
       setHotels(data);
     };
