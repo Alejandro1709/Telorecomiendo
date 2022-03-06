@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import HotelCard from './HotelCard';
 import axios from 'axios';
 
-function Sidebar(): JSX.Element {
+function Sidebar() {
   const [hotels, setHotels] = useState([
     {
       _id: '',
