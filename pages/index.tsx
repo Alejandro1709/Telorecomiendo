@@ -10,7 +10,7 @@ const Home: NextPage = () => {
 		>
 			<header className='h-2/4 bg-yellow-400 p-8'>
 				<nav
-					className='flex flex-row justify-between items-center'
+					className='flex flex-col gap-4 md:flex-row md:gap-0 justify-between items-center'
 					role='navigation'
 				>
 					<h1 className='text-3xl font-semibold text-white select-none'>
