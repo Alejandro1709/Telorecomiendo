@@ -1,5 +1,5 @@
-import Head from 'next/head';
-import React from 'react';
+import Head from 'next/head'
+import React from 'react'
 
 interface LayoutProps {
   title: string;
@@ -9,17 +9,17 @@ interface LayoutProps {
 }
 
 function Layout({ title, description, tags, children }: LayoutProps) {
-  return (
-    <div className=''>
-      <Head>
-        <title>{title}</title>
-        <meta name='description' content={description} />
-        {tags && <meta name='keywords' content={tags} />}
-      </Head>
+	return (
+		<div className='h-screen'>
+			<Head>
+				<title>{title}</title>
+				<meta name='description' content={description} />
+				{tags && <meta name='keywords' content={tags} />}
+			</Head>
 
-      <main className=''>{children}</main>
-    </div>
-  );
+			<main className='h-full'>{children}</main>
+		</div>
+	)
 }
 
-export default Layout;
+export default Layout
