@@ -37,6 +37,7 @@
         "semi": [
             "error",
             "never"
-        ]
+        ],
+        "no-mixed-spaces-and-tabs": "off"
     }
 }
