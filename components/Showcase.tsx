@@ -2,7 +2,7 @@ import React from 'react'
 
 function Showcase() {
 	return (
-		<section className='flex flex-col md:flex-row md:justify-between mx-4 gap-4 md:mx-12 md:mt-8'>
+		<section className='flex flex-col md:flex-row md:justify-between mx-4 gap-4 md:mx-12 md:m-12'>
 			<div className='flex flex-col md: justify-evenly md:gap-2'>
 				<div className='mb-4 md:m-0 mt-4'>
 					<h2 className='inline text-3xl md:text-4xl font-bold text-gray-800 leading-snug md:leading-none md:max-w-xl'>Yeah.. as you can see above those hotels are the most rated ones<span className='text-yellow-400'>!</span></h2>
