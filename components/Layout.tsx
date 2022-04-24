@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import React from 'react'
+import Footer from './Footer'
 
 interface LayoutProps {
   title: string;
@@ -18,6 +19,8 @@ function Layout({ title, description, tags, children }: LayoutProps) {
 			</Head>
 
 			<main className='h-full'>{children}</main>
+
+			<Footer />
 		</div>
 	)
 }
