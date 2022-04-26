@@ -4,7 +4,7 @@ import Footer from './Footer'
 
 interface LayoutProps {
   title: string;
-  description: string;
+  description?: string;
   tags?: string;
   children: JSX.Element | JSX.Element[];
 }
