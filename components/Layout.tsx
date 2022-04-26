@@ -19,8 +19,6 @@ function Layout({ title, description, tags, children }: LayoutProps) {
 			</Head>
 
 			<main className='h-full'>{children}</main>
-
-			<Footer />
 		</div>
 	)
 }
