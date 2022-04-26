@@ -14,7 +14,7 @@ const HomePage: NextPage = () => {
 			<Header>
 				<HotelList />
 			</Header>
-			<Showcase />
+			{/* <Showcase /> */}
 		</Layout>
 	)
 }
