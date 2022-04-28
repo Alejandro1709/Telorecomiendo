@@ -30,7 +30,7 @@ function HotelPage() {
 					</span>
 					<h2 className='md:text-2xl text-center font-semibold text-white'>{currentHotel !== undefined ? currentHotel.name : 'Hotel Name'}</h2>
 					<span className='p-2 bg-white rounded-md hover:bg-gray-200'>
-						<Link href='/'>Share</Link>
+						<button>Share</button>
 					</span>
 				</div>
 			</Header>
