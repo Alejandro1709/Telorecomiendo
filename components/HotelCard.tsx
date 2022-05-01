@@ -15,7 +15,7 @@ interface HotelCardProps {
 function HotelCard({hotel}: HotelCardProps) {
 	return (
 		<div className='m-2 bg-white rounded-md overflow-hidden shadow-md'>
-			<div className='h-28 md:h-32 bg-red-400'>Top Image</div>
+			<div className='h-28 md:h-32 bg-red-200'>Top Image</div>
 			<div className='flex flex-col p-2'>
 				<div className='flex flex-col justify-center gap-1 md:gap-0.5 mb-2 md:mb-4 select-none'>
 					<h2 className='text-gray-500 font-bold mb-1'>{hotel.name}</h2>
