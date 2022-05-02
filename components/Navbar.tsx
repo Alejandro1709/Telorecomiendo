@@ -7,20 +7,20 @@ function Navbar() {
 			role='navigation'
 		>
 			<h1 className='text-3xl font-semibold text-white select-none'>
-            hotelsnow.com
+        hotelsnow.com
 			</h1>
 			<ul className='flex align-baseline md:gap-4 gap-2'>
 				<li className='text-white font-semibold text-lg cursor-pointer hover:text-black'>
-                Home
+          Home
 				</li>
 				<li className='text-white font-semibold text-lg cursor-pointer hover:text-black'>
-                Hotels
+          Hotels
 				</li>
 				<li className='text-white font-semibold text-lg cursor-pointer hover:text-black'>
-                Countries
+          Countries
 				</li>
 				<li className='text-white font-semibold text-lg cursor-pointer hover:text-black'>
-                Account
+          Account
 				</li>
 			</ul>
 		</nav>
