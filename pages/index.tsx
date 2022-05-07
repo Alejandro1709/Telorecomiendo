@@ -14,6 +14,11 @@ const HomePage: NextPage = () => {
 				<HotelList />
 			</Header>
 			{/* <Showcase /> */}
+			<div className='h-60 px-8'>
+				<div className='h-full bg-white'>
+					<h2 className='text-3xl p-4 border-b font-semibold'>Lets get you started</h2>
+				</div>
+			</div>
 		</Layout>
 	)
 }

@@ -1,15 +1,9 @@
 import Link from 'next/link'
 import React from 'react'
+import Hotel from '../types/hotel'
 
 interface HotelCardProps {
-	hotel: {
-		id: string | number,
-		name: string,
-		slug: string,
-		desc?: string,
-		address: string,
-		price: string | number
-	}	
+	hotel: Hotel
 }
 
 function HotelCard({hotel}: HotelCardProps) {

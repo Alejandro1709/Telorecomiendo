@@ -18,7 +18,7 @@ function HotelPage() {
 
 	useEffect(() => {
 		setCurrentHotel(hotel)
-	}, [])
+	}, [hotel])
 	
 
 	return (
@@ -45,20 +45,20 @@ function HotelPage() {
 					</ul>
 					{/* Gallery */}
 					<div className='flex flex-wrap md:grid md:grid-cols-4 sm:grid-cols-2 gap-2 mt-4'>
-						<div className='h-[150px] w-[150px] bg-red-200 rounded-md'></div>
-						<div className='h-[150px] w-[150px] bg-red-200 rounded-md'></div>
-						<div className='h-[150px] w-[150px] bg-red-200 rounded-md'></div>
-						<div className='h-[150px] w-[150px] bg-red-200 rounded-md'></div>
+						<div className='h-[150px] w-[150px] bg-green-200 rounded-md shadow-md'></div>
+						<div className='h-[150px] w-[150px] bg-green-200 rounded-md shadow-md'></div>
+						<div className='h-[150px] w-[150px] bg-green-200 rounded-md shadow-md'></div>
+						<div className='h-[150px] w-[150px] bg-green-200 rounded-md shadow-md'></div>
 					</div>
 				</div>
 			</section>
 			<section className='p-8 border-t border-b'>
 				<h2 className='text-3xl font-semibold mb-8'>See some reviews</h2>
 				<div className='flex flex-row gap-2 overflow-x-scroll w-full shrink-0 flex-0'>
-					<div className='bg-gray-200 w-[260px] h-24 rounded-md'>fkk</div>
-					<div className='bg-gray-200 w-[260px] h-24 rounded-md'>fkk</div>
-					<div className='bg-gray-200 w-[260px] h-24 rounded-md'>fkk</div>
-					<div className='bg-gray-200 w-[260px] h-24 rounded-md'>fkk</div>
+					<div className='bg-gray-200 w-[260px] h-24 rounded-md shadow-md'>fkk</div>
+					<div className='bg-gray-200 w-[260px] h-24 rounded-md shadow-md'>fkk</div>
+					<div className='bg-gray-200 w-[260px] h-24 rounded-md shadow-md'>fkk</div>
+					<div className='bg-gray-200 w-[260px] h-24 rounded-md shadow-md'>fkk</div>
 				</div>
 			</section>
 		</Layout>
